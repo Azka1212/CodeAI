@@ -2,7 +2,9 @@
 
 ## Code to bugs
 
-(/Images/Pic1.jpg)
+(./Images/Pic1.jpg)
+
+(./directory_1/directory_2/.../directory_n/plot.png)
 
 URL: http://127.0.0.1:8000/api/api/detect_bugs/
 
