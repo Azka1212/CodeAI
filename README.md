@@ -2,7 +2,7 @@
 
 ## Code to bugs
 
-(./Images/Pic1.jpg)
+![plot](Images/Pic1.jpg)
 
 (./directory_1/directory_2/.../directory_n/plot.png)
 
