@@ -2,6 +2,8 @@
 
 ## Code to bugs
 
+(Images/Pic1.jpg)
+
 URL: http://127.0.0.1:8000/api/api/detect_bugs/
 
 Input fields: 
