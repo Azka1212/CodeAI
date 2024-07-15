@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "3137e98b-179d-429e-8670-860a206e636a",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36020773",
+		"_collection_link": "https://ai3333-5079.postman.co/workspace/AI-Workspace~0396898c-3cb5-4763-942d-1d85d405c155/collection/36020773-3137e98b-179d-429e-8670-860a206e636a?action=share&source=collection_link&creator=36020773"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/design_to_code/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "prompt",
+							"value": "create the ui design of given image",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/AzkaIkramullah/Downloads/images.jpg"
+						},
+						{
+							"key": "ip_address",
+							"value": "10.32.1.14",
+							"type": "text"
+						},
+						{
+							"key": "lang",
+							"value": "html",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/design_to_code/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"design_to_code",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/prompt/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prompt\": \"Write a sorting algorithm in Python.\",\r\n    \"lang\": \"python\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/prompt_to_code/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"prompt_to_code",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/convert_code/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prompt\": \"int add(int a, int b) {\\n    return a + b;\\n}\",\r\n    \"lang\": \"javascript\",\r\n    \"ip_address\":  \"10.32.1.14\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/convert_code/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"convert_code",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/image_to_solve/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "prompt",
+							"value": "Solve this question",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/AzkaIkramullah/Desktop/Django/code/myproject/uploads/Samp.jpg"
+						},
+						{
+							"key": "ip_address",
+							"value": "127.0.0.1",
+							"type": "text"
+						},
+						{
+							"key": "lang",
+							"value": "python",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/image_to_solve/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"image_to_solve",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/api/solve_with_doc/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "document",
+							"type": "file",
+							"src": "/C:/Users/AzkaIkramullah/Downloads/Create a 2 D array.docx"
+						},
+						{
+							"key": "prompt",
+							"value": "solve the given problem in doc file",
+							"type": "text"
+						},
+						{
+							"key": "lang",
+							"value": "python",
+							"type": "text"
+						},
+						{
+							"key": "ip_address",
+							"value": "10.32.1.14",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/api/solve_with_doc/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api",
+						"solve_with_doc",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/api/code_explainer/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"code\": \"def factorial(n):\\n    if n == 0:\\n        return 1\\n    else:\\n        return n * factorial(n-1)\",\r\n  \"ip_address\":  \"10.32.1.14\"\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/api/code_explainer/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api",
+						"code_explainer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/api/detect_bugs/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"def factorial(n):\\n    if n == 0:\\n        return 1\\n    else:\\n        return n * factorial(n-1)\",\r\n    \"ip_address\": \"10.32.1.14\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/api/detect_bugs/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api",
+						"detect_bugs",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
